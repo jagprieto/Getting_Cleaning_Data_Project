@@ -41,14 +41,14 @@ is generated with a four digit code in the form:
     
     
     Examples :
-    - tB.a.s.X -> tBodyAcc-mean()-X : Meassure related to the body aceleration, obtained with the accelerometer,
+    . tB.a.s.X -> tBodyAcc-mean()-X : Meassure related to the body aceleration, obtained with the accelerometer,
                   the numerical data is std statistical meassure and the magnitude is associated to the axis X.
     
   
-    - tB.aj.m.Mag > tBodyAccJerkMag-mean() : Meassure related to the body aceleration, obtained with the Jerk signals derived from the accelerometer,
+    . tB.aj.m.Mag > tBodyAccJerkMag-mean() : Meassure related to the body aceleration, obtained with the Jerk signals derived from the accelerometer,
                    the numerical data is the mean statistical meassure and the magnitude is associated to the euclidean norm.
                     
-    - tG.a.m.Y -> tBodyAcc-mean()-X : Meassure related to the gravity aceleration, obtained with the accelerometer,
+    . tG.a.m.Y -> tBodyAcc-mean()-Y : Meassure related to the gravity aceleration, obtained with the accelerometer,
                   the numerical data is the mean statistical meassure and the magnitude is associated to the axis Y.
                             
  - [Column 4] value : The MEAN VALUE for the feature linked to the variable.
