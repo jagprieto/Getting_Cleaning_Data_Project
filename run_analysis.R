@@ -2,7 +2,11 @@
 # Load libraries.
 library(data.table)
 library(plyr)
-library (MASS)
+library(reshape2)
+library(MASS)
+
+# Set working directory
+setwd("/home/jagprieto/Escritorio/COURSERA/GETTING_CLEANING_DATA/ASSIGNMENT/")
 
 # This function reads the information from the test or the train data directories and returns a data frame with 
 # the complete features data information, including the subject and the activity related to the numerical meassure.
@@ -93,6 +97,9 @@ total_csv_data_tidy <- ddply(total_csv_data, .(SubjectId, Activity), numcolwise(
 # Rename the tidy data columns with the renamed features labels (see CodeBook.md).
 names(total_csv_data_tidy)[3:ncol(total_csv_data_tidy)]<- features_data_labels$Feature[features_data_index]
 
+# Reshape the tidy data to fit in a four column data set.
+total_csv_data_tidy <- melt(total_csv_data_tidy, id=c("SubjectId", "Activity"), measure.vars=c(features_data_labels$Feature[features_data_index]))
+
 # Save data to file
-#write.table(total_csv_data_tidy, "tidy_data.txt")
+# write.table(total_csv_data_tidy, "tidy_data.txt", sep="\t\t")
 write.matrix(total_csv_data_tidy, "tidy_data.txt")
