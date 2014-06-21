@@ -33,11 +33,11 @@ is labeled with a four digit code in the form:
     * m -> Mean : The meassures are statistical mean value.
     * s -> Std : The meassures are statistical std value.
     
-  D. : This code indicates the magnitude ralted to the meassure:
+  D. : This code indicates the magnitude related to the meassure:
     * X : The meassures are values related to the X axis.
     * Y : The meassures are values related to the Y axis.
     * Z : The meassures are values related to the Z axis.
-    * Mag : The meassures are values realted to magnitudes computed using the Euclidean norm.
+    * Mag : The meassures are values related to magnitudes computed using the Euclidean norm.
     
     
     
