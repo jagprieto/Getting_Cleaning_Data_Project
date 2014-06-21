@@ -6,7 +6,7 @@ library(reshape2)
 library(MASS)
 
 # Set working directory
-setwd("/home/jagprieto/Escritorio/COURSERA/GETTING_CLEANING_DATA/ASSIGNMENT/")
+# setwd("/home/jagprieto/Escritorio/COURSERA/GETTING_CLEANING_DATA/ASSIGNMENT/")
 
 # This function reads the information from the test or the train data directories and returns a data frame with 
 # the complete features data information, including the subject and the activity related to the numerical meassure.
