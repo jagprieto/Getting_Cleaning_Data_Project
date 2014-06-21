@@ -40,16 +40,16 @@ is generated with a four digit code in the form:
     * Mag : The meassures are values related to magnitudes computed using the Euclidean norm.
     
     
-  Examples :
-  - tB.a.s.X -> tBodyAcc-mean()-X : Meassure related to the body aceleration, obtained with the accelerometer,
-                the numerical data is std statistical meassure and the magnitude is associated to the axis X.
+    Examples :
+    - tB.a.s.X -> tBodyAcc-mean()-X : Meassure related to the body aceleration, obtained with the accelerometer,
+                  the numerical data is std statistical meassure and the magnitude is associated to the axis X.
+    
   
-
-  - tB.aj.m.Mag > tBodyAccJerkMag-mean() : Meassure related to the body aceleration, obtained with the Jerk signals derived from the accelerometer,
-                 the numerical data is the mean statistical meassure and the magnitude is associated to the euclidean norm.
-                  
-  - tG.a.m.Y -> tBodyAcc-mean()-X : Meassure related to the gravity aceleration, obtained with the accelerometer,
-                the numerical data is the mean statistical meassure and the magnitude is associated to the axis Y.
+    - tB.aj.m.Mag > tBodyAccJerkMag-mean() : Meassure related to the body aceleration, obtained with the Jerk signals derived from the accelerometer,
+                   the numerical data is the mean statistical meassure and the magnitude is associated to the euclidean norm.
+                    
+    - tG.a.m.Y -> tBodyAcc-mean()-X : Meassure related to the gravity aceleration, obtained with the accelerometer,
+                  the numerical data is the mean statistical meassure and the magnitude is associated to the axis Y.
                             
  - [Column 4] value : The MEAN VALUE for the feature linked to the variable.
     
