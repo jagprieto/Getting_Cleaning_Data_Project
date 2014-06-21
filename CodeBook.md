@@ -3,10 +3,10 @@ Getting and Cleaning Data. Project assigment. Code book
 
 Summary :
 --------------------------------------------------------
-- The script generates a first version of the tidy data set thatcontains 180 rows and 68 columns.
+- The script generates a first version of the tidy data set that contains 180 rows and 68 columns.
 - The final result data is a melted version of the first version that contains 11880 and 4 columns.
 - The first two columns indicate the subject and the activity.
-- The rest of the columns contains the MEAN VALUES obtained from the selected feature meassures grouped by user and activity. 
+- The rest of the columns contains the variable names and MEAN VALUES obtained from the selected feature meassures grouped by user and activity. 
 - The information in the final result is ordered in rows by feature, user and activity.
 
 Data dictionary :
@@ -39,5 +39,17 @@ is generated with a four digit code in the form:
     * Z : The meassures are values related to the Z axis.
     * Mag : The meassures are values related to magnitudes computed using the Euclidean norm.
     
+    
+  Examples :
+  - tB.a.s.X -> tBodyAcc-mean()-X : Meassure related to the body aceleration, obtained with the accelerometer,
+                the numerical data is std statistical meassure and the magnitude is associated to the axis X.
+  
+
+  - tB.aj.m.Mag > tBodyAccJerkMag-mean() : Meassure related to the body aceleration, obtained with the Jerk signals derived from the accelerometer,
+                 the numerical data is the mean statistical meassure and the magnitude is associated to the euclidean norm.
+                  
+  - tG.a.m.Y -> tBodyAcc-mean()-X : Meassure related to the gravity aceleration, obtained with the accelerometer,
+                the numerical data is the mean statistical meassure and the magnitude is associated to the axis Y.
+                            
  - [Column 4] value : The MEAN VALUE for the feature linked to the variable.
     

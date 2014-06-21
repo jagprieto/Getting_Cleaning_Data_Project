@@ -10,10 +10,10 @@ Some notes about this project:
 
 - The file CodeBook.md contains information about the data dictionary.
 
-- The script run_analysis.R performs the generation of tidy datagrouped by user and activity for the selected feature 
+- The script run_analysis.R performs the generation of tidy data grouped by user and activity for the selected feature 
 meassurements from the test and train data sets.
 
-- The script run_analysis.R contains two Dfunctions:
+- The script run_analysis.R contains two functions:
 
   read_csv_data : 
   This function reads the information from the test or the train data directories and returns a data frame with 
