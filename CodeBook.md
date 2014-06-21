@@ -25,9 +25,9 @@ is labeled with a four digit code in the form:
     
   B. : This code indicates the origin of the signal:
     * a -> Acc : The signal comes from the accelerometer.
-    * g -> Acc : The signal comes from the gyroscope.
-    * aj -> Acc : The signal comes from the Jerk signals derived in time from the accelerometer.
-    * gj -> Acc : The signal comes from the Jerk signals derived in time from the gyroscope.
+    * g -> Gyro : The signal comes from the gyroscope.
+    * aj -> AccJerk : The signal comes from the Jerk signals derived in time from the accelerometer.
+    * gj -> GyroJerk : The signal comes from the Jerk signals derived in time from the gyroscope.
     
   C. : This code indicates the kind of statistical meassure:
     * m -> Mean : The meassures are statistical mean value.
