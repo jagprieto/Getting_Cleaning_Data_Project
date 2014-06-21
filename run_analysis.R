@@ -2,10 +2,7 @@
 # Load libraries.
 library(data.table)
 library(plyr)
-library(xlsReadWrite)
-
-# Set working directory
-setwd("/home/jagprieto/Escritorio/COURSERA/GETTING_CLEANING_DATA/ASSIGNMENT/UCI HAR Dataset/")
+library (MASS)
 
 # This function reads the information from the test or the train data directories and returns a data frame with 
 # the complete features data information, including the subject and the activity related to the numerical meassure.
@@ -89,7 +86,6 @@ train_cvs_data <- read_csv_data("train", features_data_index)
 
 # Bind test and train data.
 total_csv_data <- rbind(test_cvs_data, train_cvs_data)
-# dim(total_csv_data)
 
 # Group the tidy data by subject and activity and compute the mean value for the numeric columns.
 total_csv_data_tidy <- ddply(total_csv_data, .(SubjectId, Activity), numcolwise(mean))
@@ -97,17 +93,6 @@ total_csv_data_tidy <- ddply(total_csv_data, .(SubjectId, Activity), numcolwise(
 # Rename the tidy data columns with the renamed features labels (see CodeBook.md).
 names(total_csv_data_tidy)[3:ncol(total_csv_data_tidy)]<- features_data_labels$Feature[features_data_index]
 
-# Print a summary.
-total_csv_data_tidy[1:10,1:10]
-total_csv_data_tidy[1:10,11:20]
-total_csv_data_tidy[1:10,21:30]
-total_csv_data_tidy[1:10,31:40]
-total_csv_data_tidy[1:10,41:50]
-total_csv_data_tidy[1:10,51:68]
-
-# dim(total_csv_data_tidy)
-# colnames(total_csv_data_tidy)
-write.table(total_csv_data_tidy, "tidy_data.csv", sep=",")
-write.matrix(total_csv_data_tidy, "tidy_data.txt", sep=",")
-# write.fwf(total_csv_data_tidy, "tidy_data.txt", justify="right", widths=formatInfo$width + 1, strip.white=TRUE)
-#write.xls(total_csv_data_tidy, "tidy_data.xls")
+# Save data to file
+write.table(total_csv_data_tidy, "tidy_data.txt")
+write.matrix(total_csv_data_tidy, "tidy_data.txt", sep=" ")
