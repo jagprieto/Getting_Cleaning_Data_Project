@@ -1,4 +1,5 @@
-#################### Getting and Cleaning Data. Project assigment. Code book. #################### 
+Getting and Cleaning Data. Project assigment. Code book
+========================================================
 
 Summary :
 --------------------------------------------------------

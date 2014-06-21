@@ -1,6 +1,7 @@
-#################### Getting and Cleaning Data. Project assigment. #################### 
+Getting and Cleaning Data. Project assigment.
+========================================================
 
-- The file CodeBook.md contains iformation about the data dictionary.
+- The file CodeBook.md contains information about the data dictionary.
 
 - The script run_analysis.R performs the generation of the tidy data for the selected feature meassures grouped by user and activity
 and obtained from the test and train data sets.
