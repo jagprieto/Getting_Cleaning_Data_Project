@@ -94,5 +94,5 @@ total_csv_data_tidy <- ddply(total_csv_data, .(SubjectId, Activity), numcolwise(
 names(total_csv_data_tidy)[3:ncol(total_csv_data_tidy)]<- features_data_labels$Feature[features_data_index]
 
 # Save data to file
-write.table(total_csv_data_tidy, "tidy_data.txt")
-write.matrix(total_csv_data_tidy, "tidy_data.txt", sep=" ")
+#write.table(total_csv_data_tidy, "tidy_data.txt")
+write.matrix(total_csv_data_tidy, "tidy_data.txt")
