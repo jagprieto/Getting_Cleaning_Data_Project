@@ -13,6 +13,8 @@ Some notes about this project:
 - The script run_analysis.R performs the generation of tidy data grouped by user and activity for the selected feature 
 meassurements from the test and train data sets.
 
+- The tidy_data data frame can be load with the following command: read.table(>file-name>,  header=TRUE, sep="\t") 
+
 - The script run_analysis.R contains two functions:
 
   read_csv_data : 
@@ -30,7 +32,7 @@ meassurements from the test and train data sets.
   5. Bind test and train data to generate the first tidy data set version (with 68 columns).
   6. Group the tidy data by subject and activity. Compute the mean value for the numeric columns (features).
   7. Rename the tidy data columns with the renamed features labels (see CodeBook.md).
-  8. Generate a melted version (4 columns) of the tidy data to be final result.
+  8. Generate a melted version  of the tidy data with 4 columns (see CodeBook.md) to be final result.
   9. Save result into a text file.
   
   

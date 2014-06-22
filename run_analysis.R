@@ -100,6 +100,10 @@ names(total_csv_data_tidy)[3:ncol(total_csv_data_tidy)]<- features_data_labels$F
 # Reshape the tidy data to fit in a four column data set.
 total_csv_data_tidy <- melt(total_csv_data_tidy, id=c("SubjectId", "Activity"), measure.vars=c(features_data_labels$Feature[features_data_index]))
 
-# Save data to file
-# write.table(total_csv_data_tidy, "tidy_data.txt", sep="\t\t")
-write.matrix(total_csv_data_tidy, "tidy_data.txt")
+# Save data to file.
+#write.table(total_csv_data_tidy, "tidy_data.txt", sep="\t")
+write.matrix(total_csv_data_tidy, "tidy_data.txt", sep="\t")
+
+# Code to read the tidy data frame.
+# read_data <- read.table("tidy_data.txt",  header=TRUE, sep="\t")
+
