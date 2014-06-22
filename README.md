@@ -13,7 +13,7 @@ Some notes about this project:
 - The script run_analysis.R performs the generation of tidy data grouped by user and activity for the selected feature 
 meassurements from the test and train data sets.
 
-- The tidy_data data frame can be load with the following command: read.table(>file-name>,  header=TRUE, sep="\t") 
+- The tidy data frame can be loaded with the following command: read.table(>file-name>,  header=TRUE, sep="\t") 
 
 - The script run_analysis.R contains two functions:
 
